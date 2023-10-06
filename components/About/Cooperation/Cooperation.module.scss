@@ -1,0 +1,105 @@
+@use "/styles/globals.scss" as *;
+
+.cooperation {
+  padding-block: 40px;
+  @include pageGrid;
+  color: #1e1e21;
+  gap: 40px;
+
+  background-color: #fdfcfa;
+
+  &__statement {
+    grid-column: 1 / -1;
+  }
+
+  &__header {
+    font-family: Ordina regular;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 28.6px */
+    letter-spacing: -0.52px;
+
+    margin-bottom: 20px;
+  }
+
+  &__line {
+    height: 1px;
+    background-color: #c6a687;
+    width: 195px;
+    margin-bottom: 16px;
+  }
+
+  &__paragraph {
+    font-family: Ordina light;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+    letter-spacing: -0.16px;
+
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    display: flex;
+    padding: 12px 28px 14px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #c6a687;
+  }
+
+  &__contacts {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    &__image {
+      height: 44px;
+    }
+
+    &__texts {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &__name {
+      font-family: Ordina regular;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 24px */
+      letter-spacing: 0.32px;
+      text-transform: uppercase;
+    }
+
+    &__number {
+      font-family: Ordina Light;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%; /* 15.4px */
+      letter-spacing: -0.14px;
+      color: #494843;
+    }
+
+    &__email {
+      font-family: Ordina Light;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%; /* 15.4px */
+      letter-spacing: -0.14px;
+      color: #494843;
+    }
+  }
+}

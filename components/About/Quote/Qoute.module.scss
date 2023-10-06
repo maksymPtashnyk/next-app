@@ -1,0 +1,55 @@
+.quote {
+  margin-bottom: 80px;
+
+  &__block {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__lines {
+    display: flex;
+    gap: 1px;
+  }
+
+  &__line {
+    width: 1px;
+    height: 100%;
+    background-color: #C6A687;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__mainText {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 22.5px */
+    letter-spacing: 0.36px;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &__line {
+      width: 35px;
+      height: 1px;
+      background-color: #C9C7C2;;
+    }
+
+    &__text {
+      font-family: Ordina regular;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.32px;
+      color: #C9C7C2;
+    }
+  }
+}

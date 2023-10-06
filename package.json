@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextcss/reset": "^0.2.4-beta",
+    "classnames": "^2.3.2",
+    "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "13.5.4"
+    "react-responsive-carousel": "^3.2.23",
+    "sass": "^1.68.0",
+    "swiper": "^10.3.1"
   },
   "devDependencies": {
     "eslint": "^8",

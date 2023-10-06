@@ -1,0 +1,15 @@
+.html {
+  font-family: 'Ordina regular', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: #FDFCFA;
+  background-color: #1E1E21;
+}
+
+.main {
+  display: flex;
+  background-color: #1E1E21;
+  flex-direction: column;
+  flex: 1 0 auto;
+  transition-duration: 0.3s;
+}

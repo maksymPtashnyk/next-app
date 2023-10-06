@@ -1,0 +1,27 @@
+@use '../../styles/globals.scss' as *;
+
+.header {
+  position: fixed;
+  box-shadow: 0 1px 0 0 #1E1E21;
+  z-index: 3;
+  transition-duration: 0.3s;
+  background-color: #1E1E21;
+  width: 100%;
+
+  &__links {
+    display: none;
+  }
+}
+
+.main {
+  padding: 16px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.icon__menu {
+  display: flex;
+  gap: 20px;
+}

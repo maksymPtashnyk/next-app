@@ -1,0 +1,55 @@
+.card {
+  height: 418px;
+
+  &__background {
+    &__1{
+      background-image: url(../../../public/cards.jpg);
+    }
+
+    &__2{
+      background-image: url(../../../public/cards2.jpg);
+    }
+  }
+
+  &__content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__number {
+    font-family: Ordina regular;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.36px;
+  }
+
+  &__bottom {
+  }
+
+  &__mainText {
+    font-family: Ordina regular;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+
+    letter-spacing: -0.36px;
+
+    margin-bottom: 16px;
+  }
+
+  &__paragraph {
+    font-family: Ordina light;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; 
+    letter-spacing: -0.14px;
+    color: #C9C7C2;
+  }
+}

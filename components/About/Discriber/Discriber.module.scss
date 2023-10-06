@@ -1,0 +1,42 @@
+@use "../../../styles/globals.scss" as *;
+
+.discriber {
+  padding-top: 100px;
+  @include pageGrid;
+
+  &__container {
+    grid-column: 1 / -1;
+    
+    padding-bottom: 80px;
+  }
+
+  &__header {
+    font-family: Ordina regular;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.52px;
+
+    margin-bottom: 24px;
+  }
+
+  &__line {
+    width: 195px;
+    height: 1px;
+    background-color: #c6a687;
+
+    margin-bottom: 16px;
+  }
+
+  &__paragraph {
+    font-family: Ordina regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.16px;
+
+    margin-bottom: 32px;
+  }
+}

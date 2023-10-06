@@ -1,0 +1,67 @@
+@use "../../../styles/globals.scss" as *;
+
+.wrapper {
+  position: relative;
+}
+
+.counter {
+  bottom: -25%;
+  position: absolute;
+  padding: 20px;
+  gap: 40px;
+
+  background-color: #FDFCFA;
+
+  @include pageGrid;
+  grid-column: 1 / -1;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    grid-column: span 3;
+
+    &__right {
+      margin-left: 20px;
+    }
+  }
+
+  &__lineHorisontal {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background-color: #C6A687;
+  }
+  
+  &__lineVertical {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    bottom: 20px;
+    // grid-column: 0 span;
+    width: 1px;
+    background-color: #C6A687;
+  }
+
+  &__number {
+    font-family: Ordina regular;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 23.4px */
+    letter-spacing: -0.18px;
+    color: #1E1E21;
+  }
+
+  &__description {
+    font-family: Ordina light;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 15.4px */
+    letter-spacing: -0.14px;
+    color: #494843;
+  }
+}

@@ -1,0 +1,80 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+
+
+@mixin pageGrid {
+  --columns: 6;
+
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  column-gap: 8px;
+
+  @include onTablet {
+    --columns: 12;
+  }
+
+  @include onDesctop {
+    --columns: 24;
+  }
+}
+
+@mixin onTablet {
+  @media screen and (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin onDesctop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+  $primary-color: #313237;
+  $background-card-color: #fff;
+  $main-background-color: #1E1E21;
+  $text-color: #89939a;
+  $white-color: #fff;
+  $elements-color: #e2e6e9;
+  $icons-color: #b4bdc3;
+  $card-bord-color: #e2e6e9;
+  $secondary-color: #89939a;
+  $shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+  $button-color: #313237;
+  $button-selected-text: #27ae60;
+  $button-selected-backg: #fff;
+  $icon-bckg: transparent;
+  $icon-bckg-disable: #e2e6e9;
+  $icon-hover: var($primary-color);
+  $icon-hover-bckg: transparent;
+  $dropdown: #b4bdc3;
+  $hover-bg-color: #fafbfc;
+  $card-hover: var($primary-color);
+
+  @font-face {
+    font-family: 'Ordina Light';
+    src: url('../public/Fonts/Ordina-Light.ttf') format('opentype');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Ordina Regular';
+    src: url('../public/Fonts/Ordina-Regular.ttf') format('opentype');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'Ordina SemiBold';
+    src: url('../public/Fonts/Ordina-Semibold.ttf') format('opentype');
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: 'Ordina Bold';
+    src: url('../public/Fonts/Ordina-Bold.ttf') format('opentype');
+    font-weight: 700;
+  }
