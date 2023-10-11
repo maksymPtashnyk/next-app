@@ -47,7 +47,7 @@ const Footer = () => {
         <div className={styles.footer__contacts__navigator}>
           <div className={styles.footer__contacts__navigator__block}>
             <Image src='/logo-cart.png' width={29} height={24} alt='logo'/>
-            <p className={styles.footer__contacts__navigator__text}>Карта ТРЦ</p>
+            <p className={styles.footer__contacts__navigator__text}>Карта Молла</p>
           </div>
         </div>
       </div>

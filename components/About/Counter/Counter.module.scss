@@ -2,24 +2,28 @@
 
 .wrapper {
   position: relative;
+  margin: 0 auto;
+  height: 1px;
+  @include pageGrid;
 }
 
 .counter {
-  bottom: -25%;
+  width: 100%;
   position: absolute;
   padding: 20px;
   gap: 40px;
 
+  transform: translateY(-50%);
+
   background-color: #FDFCFA;
 
-  @include pageGrid;
   grid-column: 1 / -1;
 
   &__block {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 24px;
-    grid-column: span 3;
+    flex: 0.5;
 
     &__right {
       margin-left: 20px;
@@ -33,6 +37,10 @@
     right: 20px;
     height: 1px;
     background-color: #C6A687;
+
+    @include onTablet {
+      display: none;
+    }
   }
   
   &__lineVertical {
