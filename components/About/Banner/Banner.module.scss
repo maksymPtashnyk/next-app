@@ -6,6 +6,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include onTablet {
+    height: 560px;
+  }
 
 
   &__header {
@@ -30,4 +33,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @include onTablet {
+    left: -32px;
+    right: -32px;
+    background-image: url("/background-full.jpeg");
+  }
 }

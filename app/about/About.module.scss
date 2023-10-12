@@ -3,5 +3,9 @@
 .container {
   padding-top: 30px;
   padding-inline: 20px;
+
+  @include onTablet {
+    padding-inline: 32px;
+  }
 }
 

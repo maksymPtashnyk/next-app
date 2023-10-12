@@ -2,31 +2,48 @@
 
 .wrapper {
   position: relative;
-  margin: 0 auto;
   height: 1px;
   @include pageGrid;
+  justify-items: center;
 }
 
 .counter {
-  width: 100%;
   position: absolute;
   padding: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px;
+  
+  width: 100%;
+  max-width: 856px;
+
+  background-color: #fdfcfa;
 
   transform: translateY(-50%);
 
-  background-color: #FDFCFA;
-
-  grid-column: 1 / -1;
 
   &__block {
     display: flex;
-    flex-direction: row;
     gap: 24px;
-    flex: 0.5;
-
-    &__right {
-      margin-left: 20px;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 40%;
+    position: relative;
+  
+    @include onTablet {
+      flex-basis: 20%;
+      gap: 32px;
+  
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: -21px;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: #c6a687;
+      }
     }
   }
 
@@ -36,21 +53,20 @@
     left: 20px;
     right: 20px;
     height: 1px;
-    background-color: #C6A687;
+    background-color: #c6a687;
 
     @include onTablet {
       display: none;
     }
   }
-  
+
   &__lineVertical {
     position: absolute;
     left: 50%;
     top: 20px;
     bottom: 20px;
-    // grid-column: 0 span;
     width: 1px;
-    background-color: #C6A687;
+    background-color: #c6a687;
   }
 
   &__number {
@@ -60,7 +76,7 @@
     font-weight: 500;
     line-height: 130%; /* 23.4px */
     letter-spacing: -0.18px;
-    color: #1E1E21;
+    color: #1e1e21;
   }
 
   &__description {
